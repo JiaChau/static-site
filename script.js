@@ -1,43 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const hooks = {
-    navLinks: document.querySelectorAll(".site-nav a"),
-    timelinePanel: document.querySelector("[data-hook=\"timeline-panel\"]"),
-    resumeCards: document.querySelectorAll("[data-resume-type]"),
-    socialLinks: document.querySelectorAll(".link-pill"),
+  const page = document.body.dataset.page || "home";
+
+  const registerHome = () => {
+    const resumeEmbed = document.querySelector("[data-hook=\"resume-embed\"] object");
+    if (resumeEmbed) {
+      resumeEmbed.addEventListener("load", () => {
+        resumeEmbed.dataset.loaded = "true";
+      });
+    }
   };
 
-  const smoothScroll = () => {
-    // Placeholder: keep anchor behavior native until we wire smooth scrolling.
-    return false;
+  const registerTimeline = () => {
+    const timelineScroll = document.querySelector("[data-hook=\"timeline-scroll\"]");
+    if (timelineScroll) {
+      timelineScroll.dataset.ready = "true";
+    }
   };
 
-  const prepareTimelineEditor = () => {
-    if (!hooks.timelinePanel) return;
-    // Future enhancement: allow editing milestones from a JSON file or CMS.
-    hooks.timelinePanel.dataset.futureFeature = "timeline-editor";
-  };
-
-  const prepareResumeSwitcher = () => {
-    hooks.resumeCards.forEach((card) => {
-      card.dataset.ready = "true";
-      // Hook for future toggles / analytics.
-    });
-  };
-
-  const registerSuggestions = () => {
+  const logFutureIdeas = () => {
     const ideas = [
-      "Smooth-scroll navigation with IntersectionObserver",
-      "Project card filtering or carousel",
-      "Editable timeline fed from local JSON",
-      "Resume variant switcher animation",
-      "Scroll-triggered glow animations on hero orb",
+      "Smooth-scroll navigation",
+      "Project filtering",
+      "Editable timeline sourced from JSON",
+      "Inline resume annotations",
+      "Framer-motion style micro-interactions",
     ];
-    console.info("Future interaction ideas:", ideas);
+    console.info("Placeholder interaction ideas:", ideas);
   };
 
-  smoothScroll();
-  prepareTimelineEditor();
-  prepareResumeSwitcher();
-  registerSuggestions();
-  console.log("Portfolio shell ready for future enhancements.");
+  if (page === "timeline") {
+    registerTimeline();
+  } else {
+    registerHome();
+  }
+
+  logFutureIdeas();
+  console.log(`Page shell (${page}) ready.`);
 });
