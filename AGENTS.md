@@ -2,8 +2,8 @@
 
 ## Project Structure & Module Organization
 - `index.html` holds the single-page layout; keep sections semantic (`header`, `main`, `footer`) and add new content inside those blocks.
-- `styles.css` contains all styling; extend the existing palette (blue/purple gradient, light background) and keep related rules grouped together.
-- `script.js` is for light client-side behavior; keep logic inside `DOMContentLoaded` and tuck helpers near their usage to avoid globals.
+- `styles.css` contains all styling; build on the dark, glassy Apple-inspired palette (deep charcoal, soft gradients, luminous accents) and keep related rules grouped together.
+- `script.js` is for light client-side behavior; keep logic inside `DOMContentLoaded`, tuck helpers near their usage, and leave hooks for future timeline/resume interactions without polluting globals.
 - Add static assets under an `assets/` folder and reference them with relative paths.
 
 ## Local Run & Build Commands
