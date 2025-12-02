@@ -3,48 +3,328 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Git Website</title>
+    <title>JA Studio · Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>My Git-Hosted Website</h1>
-      <p>A simple site ready for Git & GitHub Pages</p>
+    <header class="site-header" id="top">
+      <div class="brand-mark" aria-label="JA Studio">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-text">JA Studio</span>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#hero">Overview</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#connect">Connect</a>
+      </nav>
+      <a class="pill-button pill-button--ghost" href="#resumes">View Résumés</a>
     </header>
 
-    <main class="content">
-      <section>
-        <h2>About This Site</h2>
-        <p>
-          This is a minimal static website you can host from a Git repository,
-          for example on GitHub Pages, GitLab Pages, or another static host.
-        </p>
+    <main>
+      <section id="hero" class="hero" aria-label="Hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Designing liquid experiences</p>
+            <h1>
+              Portfolio crafted with Apple-like clarity, dark softness, and
+              future-ready thinking.
+            </h1>
+            <p class="lede">
+              I design and build calm, expressive interfaces that feel premium,
+              fluid, and scalable from GitHub Pages to full-stack platforms.
+            </p>
+            <div class="hero-ctas">
+              <a class="pill-button" href="assets/pdfs/master-resume.pdf" download>
+                Download master résumé
+              </a>
+              <a class="pill-button pill-button--ghost" href="#projects">
+                Explore builds
+              </a>
+            </div>
+            <ul class="signal-list">
+              <li>Product design & systems thinking</li>
+              <li>Front-end architecture & components</li>
+              <li>Guidance for future dynamic builds</li>
+            </ul>
+          </div>
+          <div class="hero-visual">
+            <figure>
+              <img src="assets/images/hero-orb.svg" alt="Luminous orb representing fluid design" />
+              <figcaption>From concept to code, grounded yet luminous.</figcaption>
+            </figure>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>How to Edit</h2>
-        <ul>
-          <li>Edit this text in <code>index.html</code>.</li>
-          <li>Change colors and layout in <code>styles.css</code>.</li>
-          <li>Add interactivity in <code>script.js</code>.</li>
-        </ul>
+      <section id="projects" class="section section-projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected projects</p>
+          <h2>Impactful launches & experiments</h2>
+          <p class="section-lede">
+            Modular case studies highlighting design systems, engineering rigor,
+            and measurable outcomes. Swap in your own cards as work evolves.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="project-card">
+            <header>
+              <p class="project-tag">SaaS Platform</p>
+              <h3>FlowOS · Product analytics cockpit</h3>
+            </header>
+            <p>
+              Built a dashboard with adaptive theming, elastic charts, and a
+              plug-in architecture ready for enterprise scale.
+            </p>
+            <ul class="token-list">
+              <li>Design system</li>
+              <li>React prototype</li>
+              <li>Data viz</li>
+            </ul>
+            <a class="arrow-link" href="#" aria-disabled="true">Case study coming soon</a>
+          </article>
+          <article class="project-card">
+            <header>
+              <p class="project-tag">Brand Experience</p>
+              <h3>Studio North · Immersive marketing site</h3>
+            </header>
+            <p>
+              Directed a cinematic landing page with soft depth, editorial
+              storytelling, and buttery scroll choreography.
+            </p>
+            <ul class="token-list">
+              <li>Art direction</li>
+              <li>GSAP concept</li>
+              <li>CMS-ready</li>
+            </ul>
+            <a class="arrow-link" href="#" aria-disabled="true">Preview placeholder</a>
+          </article>
+          <article class="project-card">
+            <header>
+              <p class="project-tag">Systems</p>
+              <h3>Modkit · Component library foundation</h3>
+            </header>
+            <p>
+              Authored a layered token strategy, documentation microsite, and a
+              governance model for multi-team adoption.
+            </p>
+            <ul class="token-list">
+              <li>Tokens</li>
+              <li>Accessibility</li>
+              <li>Playbook</li>
+            </ul>
+            <a class="arrow-link" href="#" aria-disabled="true">Docs ready soon</a>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <h2>Next Steps</h2>
-        <ol>
-          <li>Initialize a Git repository here.</li>
-          <li>Push it to your Git hosting (e.g., GitHub).</li>
-          <li>Enable Pages hosting in the repo settings.</li>
-        </ol>
+      <section id="services" class="section section-services">
+        <div class="section-heading">
+          <p class="eyebrow">How I partner</p>
+          <h2>Hands-on builder with strategic taste</h2>
+          <p class="section-lede">
+            Whether you need a sprint partner or long-term product collaborator,
+            the goal remains the same: premium experiences grounded in solid
+            systems.
+          </p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Discovery & narrative</h3>
+            <p>
+              Translate ambiguity into crisp positioning, brand story, and
+              north-star concepts your team can rally behind.
+            </p>
+          </article>
+          <article class="service-card">
+            <h3>Design systems</h3>
+            <p>
+              Architect tokens, components, and documentation that let teams move
+              faster without sacrificing craft.
+            </p>
+          </article>
+          <article class="service-card">
+            <h3>Engineering support</h3>
+            <p>
+              Build resilient front-end foundations with vanilla HTML/CSS/JS that
+              can graduate into modern frameworks later.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="social" class="section section-social">
+        <div class="section-heading">
+          <p class="eyebrow">Links & signals</p>
+          <h2>Connect across the stack</h2>
+          <p class="section-lede">
+            Swap these placeholders with the platforms you show up on most.
+            Every link uses pill styling for quick scanning.
+          </p>
+        </div>
+        <div class="link-pills">
+          <a class="link-pill" href="#" aria-label="GitHub profile">GitHub</a>
+          <a class="link-pill" href="#" aria-label="LinkedIn profile">LinkedIn</a>
+          <a class="link-pill" href="#" aria-label="Case studies">Notion Hub</a>
+          <a class="link-pill" href="#" aria-label="Email JA">Email</a>
+        </div>
+      </section>
+
+      <section id="resumes" class="section section-resume">
+        <div class="section-heading">
+          <p class="eyebrow">Résumé hub</p>
+          <h2>Master & role-specific resumés</h2>
+          <p class="section-lede">
+            Keep both files under version control so updates flow everywhere: one
+            comprehensive master and targeted variants for specific tracks.
+          </p>
+        </div>
+        <div class="resume-grid">
+          <article class="resume-card" data-resume-type="master">
+            <h3>Master resume</h3>
+            <p>
+              Everything employers need: strategic narrative, quantified wins,
+              and selected case studies.
+            </p>
+            <div class="resume-actions">
+              <a class="pill-button" href="assets/pdfs/master-resume.pdf" download>
+                Download PDF
+              </a>
+              <button type="button" class="ghost-link" disabled>
+                Update via IDE
+              </button>
+            </div>
+          </article>
+          <article class="resume-card" data-resume-type="alternate">
+            <h3>Alternate resume</h3>
+            <p>
+              Tailor for domain-specific roles (e.g., research, systems). Swap in
+              relevant highlights here.
+            </p>
+            <div class="resume-actions">
+              <a class="pill-button pill-button--ghost" href="assets/pdfs/alt-resume.pdf" download>
+                Download PDF
+              </a>
+              <button type="button" class="ghost-link" disabled>
+                Switch variant
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="section section-timeline">
+        <div class="section-heading">
+          <p class="eyebrow">Editable timeline</p>
+          <h2>Milestones & experiments</h2>
+          <p class="section-lede">
+            Update these entries directly from your IDE. Each block uses a code
+            editor motif for clarity and quick diffs.
+          </p>
+        </div>
+        <div class="timeline-editor" data-hook="timeline-panel">
+          <div class="editor-header" role="presentation">
+            <span class="editor-dot dot-red"></span>
+            <span class="editor-dot dot-yellow"></span>
+            <span class="editor-dot dot-green"></span>
+            <span class="editor-title">timeline.js</span>
+          </div>
+          <div class="editor-body" role="list">
+            <div class="timeline-row" role="listitem" data-year="2025">
+              <span class="line-number">01</span>
+              <div class="line-content">
+                <p class="timeline-meta">2025 · Systems Lead</p>
+                <p class="timeline-text">
+                  Rolled out Modkit 2.0 tokens, unlocking multi-brand adoption
+                  and dark-mode parity.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-row" role="listitem" data-year="2024">
+              <span class="line-number">02</span>
+              <div class="line-content">
+                <p class="timeline-meta">2024 · Product Launch</p>
+                <p class="timeline-text">
+                  Co-created FlowOS analytics cockpit—reduced insight time by
+                  38% for core customer cohort.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-row" role="listitem" data-year="2023">
+              <span class="line-number">03</span>
+              <div class="line-content">
+                <p class="timeline-meta">2023 · Studio Commission</p>
+                <p class="timeline-text">
+                  Directed Studio North immersive marketing experience with
+                  layered storytelling.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-row" role="listitem" data-year="2022">
+              <span class="line-number">04</span>
+              <div class="line-content">
+                <p class="timeline-meta">2022 · Personal milestone</p>
+                <p class="timeline-text">
+                  Built this portfolio foundation—ready for dynamic backends when
+                  needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-about">
+        <div class="section-heading">
+          <p class="eyebrow">About & values</p>
+          <h2>Calm confidence, curious craft</h2>
+          <p class="section-lede">
+            Long-form bio placeholder: outline your journey, leadership style,
+            and the outcomes you obsess about.
+          </p>
+        </div>
+        <div class="about-grid">
+          <article class="about-panel">
+            <h3>Origin story</h3>
+            <p>
+              Ship-ready generalist with roots in both design studios and startup
+              engineering pods. I thrive in ambiguous briefs and collaborative
+              discovery.
+            </p>
+          </article>
+          <article class="about-panel">
+            <h3>Operating principles</h3>
+            <ul class="values-list">
+              <li>Systems before surfaces</li>
+              <li>Every touchpoint should feel inevitable</li>
+              <li>Accessibility is table stakes</li>
+              <li>Design and code in the same language</li>
+            </ul>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>Built with ♥ and Git.</p>
+    <footer class="site-footer" id="connect">
+      <div>
+        <p>Available for select collaborations and systems advisory.</p>
+        <a class="arrow-link" href="mailto:hello@example.com">hello@example.com</a>
+      </div>
+      <div class="footer-links">
+        <a href="#top">Back to top</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#resumes">Résumés</a>
+      </div>
+      <p class="footer-note">Built to live on GitHub Pages, ready for dynamic evolution.</p>
     </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
-

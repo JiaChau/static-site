@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-labelledby="title">
+  <title id="title">Placeholder luminous orb</title>
+  <defs>
+    <radialGradient id="orb" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#8cf2ff" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#5d7dff" stop-opacity="0.65" />
+      <stop offset="85%" stop-color="#11121c" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="ring" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#00f5a0" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0fd9ff" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <rect width="360" height="360" rx="40" fill="#05060d" />
+  <circle cx="180" cy="150" r="140" fill="url(#orb)" />
+  <circle cx="180" cy="150" r="150" fill="none" stroke="url(#ring)" stroke-width="2" stroke-dasharray="20 14" opacity="0.8" />
+</svg>
