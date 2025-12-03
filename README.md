@@ -1,28 +1,14 @@
-## My Git Website
+# JA Studio Portfolio
 
-This is a minimal static website ready to be tracked with Git and hosted on a service like GitHub Pages.
+A calm, Apple-inspired landing experience that introduces JA Studio with dark glass panels, luminous gradients, and generous breathing room. Everything ships as placeholder copy today so you can preview the feeling before real storytelling arrives.
 
-### Files
+## What you can explore
+- **Hero overview** – Learn the positioning in a single sweep and open the embedded résumé without leaving the page.
+- **Showcase cards** – Three keynote-style tiles ready for future case studies; each demonstrates spacing, tags, and hover depth.
+- **Collaboration modes** – Snapshot of potential services, framed to highlight a fluid, end-to-end workflow.
+- **Links hub** – Soft-glow capsules for social profiles or external resources.
+- **Master résumé** – Inline PDF viewer living inside the page’s glass treatment so visitors never break context.
+- **Dedicated timeline** – A separate `timeline.html` page that scrolls like a quiet notebook for milestones and achievements.
 
-- `index.html` – main page
-- `styles.css` – basic styling
-- `script.js` – placeholder JavaScript
-
-### How to put this on Git
-
-1. Initialize a repository in this folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial website"
-   ```
-2. Create an empty repo on your Git host (e.g., GitHub).
-3. Add the remote and push:
-   ```bash
-   git remote add origin https://YOUR-GIT-HOST/YOUR-USER/YOUR-REPO.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-To host on GitHub Pages, enable Pages in your repository settings and choose the `main` branch (often `/root` or `/docs` folder depending on the option you prefer).
-
+## How to experience it
+Open `index.html` in a browser (or serve the repo with any static host) and scroll through the sections. Use the hero CTA to jump into the résumé embed or hop over to `timeline.html` for the milestone log. Replace the placeholder text, imagery, links, and PDF whenever you're ready to publish your own story.

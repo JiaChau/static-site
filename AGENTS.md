@@ -1,10 +1,12 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- `index.html` holds the single-page layout; keep sections semantic (`header`, `main`, `footer`) and add new content inside those blocks.
-- `styles.css` contains all styling; build on the dark, glassy Apple-inspired palette (deep charcoal, soft gradients, luminous accents) and keep related rules grouped together.
-- `script.js` is for light client-side behavior; keep logic inside `DOMContentLoaded`, tuck helpers near their usage, and leave hooks for future timeline/resume interactions without polluting globals.
-- Add static assets under an `assets/` folder and reference them with relative paths.
+- `index.html` hosts the primary experience (hero, showcase, services, links, inline master résumé). Keep sections semantic, maintain the inline PDF embed, and link to the timeline via CTA buttons.
+- `timeline.html` is a dedicated scrollable milestone page; keep entries short, stacked, and ready for IDE-edited content.
+- `styles.css` contains all styling; build on the dark, glassy Apple-inspired palette (deep charcoal, soft gradients, luminous accents), keep transitions smooth-yet-lightweight, and respect `prefers-reduced-motion` helpers.
+- `script.js` stays minimal inside `DOMContentLoaded`, using `data-page` hooks (`home` vs `timeline`) to prep embeds or scroll panels without leaking globals.
+- `README.md` remains a visitor-facing overview that explains what the site showcases—not a developer manual.
+- Add static assets under an `assets/` folder and reference them with relative paths (e.g., `assets/images/`, `assets/pdfs/master-resume.pdf`).
 
 ## Local Run & Build Commands
 - Build-free static site. From the repo root, preview locally with `python3 -m http.server 8000` and open `http://localhost:8000`.
@@ -13,12 +15,12 @@
 ## Coding Style & Naming Conventions
 - Indent with 2 spaces in HTML, CSS, and JS; keep lines roughly under 100 characters.
 - HTML: lower-case elements, meaningful headings, and kebab-case class names (e.g., `site-header`, `content`).
-- CSS: prefer hyphenated class selectors, reuse existing spacing rhythm (1.5rem–3rem blocks), and keep gradients consistent unless intentionally redesigned.
+- CSS: prefer hyphenated class selectors, reuse the 1.5rem–3rem spacing rhythm, keep gradients consistent, and use lightweight transitions with `prefers-reduced-motion` fallbacks.
 - JS: prefer `const`/`let`, arrow functions for callbacks, early returns, and minimal console noise. Keep vanilla JS (no frameworks) unless discussed first.
 
 ## Testing Guidelines
-- Manual pass for each change: load the page, confirm hero gradient renders, footer text reads correctly, and the console shows no errors.
-- Basic accessibility checks: tab through interactive elements, ensure headings remain in order, and verify text contrast against the light background.
+- Manual pass for each change: load `index.html`, confirm the hero gradient, inline résumé embed, and footer render correctly; open `timeline.html` and scroll through entries; keep the console clean.
+- Basic accessibility checks: tab through interactive elements (including the résumé object fallback), ensure headings remain in order, and verify text contrast against the dark background.
 - If adding images or fonts, confirm they load from `assets/` without mixed-content warnings when served over HTTPS.
 
 ## Commit & Pull Request Guidelines
