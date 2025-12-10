@@ -34,5 +34,4 @@ SocialScreen helps individuals and families build healthier digital habits by su
 - Next milestone: backend beta that shares highlights with trusted contacts.
 
 ## Contact
-- Email: [jiarongchau@gmail.com](mailto:jiarongchau@gmail.com)
-- GitHub: [github.com/ja](https://github.com/ja)
+- GitHub: [github.com/JiaChau](https://github.com/JiaChau)
