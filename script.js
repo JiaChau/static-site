@@ -17,15 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  const logFutureIdeas = () => {
-    const ideas = [
-      "Smooth-scroll navigation",
-      "Project filtering",
-      "Editable timeline sourced from JSON",
-      "Inline resume annotations",
-      "Framer-motion style micro-interactions",
+  const logFutureMilestones = () => {
+    const milestones = [
+      "Ship progress sharing experiments",
+      "Port dashboard to macOS/iPad",
+      "Launch backend beta for highlights",
+      "Expand ManagedSettings schedules",
+      "Publish Screen Time entitlement guide",
     ];
-    console.info("Placeholder interaction ideas:", ideas);
+    console.info("SocialScreen roadmap teasers:", milestones);
   };
 
   if (page === "timeline") {
@@ -34,6 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     registerHome();
   }
 
-  logFutureIdeas();
-  console.log(`Page shell (${page}) ready.`);
+  logFutureMilestones();
+  console.log(`SocialScreen page shell (${page}) ready.`);
 });
